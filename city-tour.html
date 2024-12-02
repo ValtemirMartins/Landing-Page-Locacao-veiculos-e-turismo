@@ -1,0 +1,378 @@
+<!-- Após a seção do Rio de Janeiro, adicione: -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tour Rio de Janeiro - Sua Empresa</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+
+.main-header {
+    background-color: #003366;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo img {
+    height: 60px;
+    width: 100px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste para o conteúdo não ficar escondido atrás do header fixo */
+body {
+    padding-top: 80px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem;
+    }
+}
+
+        .tour-header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .attraction-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-out;
+        }
+
+        .attraction-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .attraction-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .attraction-info {
+            padding: 1.5rem;
+        }
+
+        .attraction-info h3 {
+            color: #003366;
+            margin-bottom: 0.5rem;
+        }
+
+        .tour-description {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo.webp" alt="Logo da Empresa">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tour-header">
+        <h1>City Tour Rio de Janeiro</h1>
+    </section>
+
+    <div class="tour-description">
+        <h2>Conheça as Maravilhas do Rio</h2>
+        <p>Um passeio completo pelos principais pontos turísticos da Cidade Maravilhosa</p>
+    </div>
+
+    <div class="attractions-grid">
+        <div class="attraction-card">
+            <img src="https://imgsapp.em.com.br/app/noticia_127983242361/2021/10/12/1313010/-cristo-_0.jpg"
+                alt="Cristo Redentor" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Cristo Redentor</h3>
+                <p>Uma das 7 maravilhas do mundo moderno, com vista panorâmica da cidade</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://riotur.rio/wp-content/uploads/2015/09/14521730864_3b0816ce80_c.jpg" alt="Pão de Açúcar"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>Pão de Açúcar</h3>
+                <p>Passeio de bondinho com vista deslumbrante da Baía de Guanabara</p>
+            </div>
+        </div>
+        <div class="attraction-card">
+            <img src="https://tourb.com.br/img/lugares/rio-de-janeiro/praia-de-ipanema.jpg" alt="Pão de Açúcar"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia de Ipanema</h3>
+                <p>Famosa mundialmente por sua beleza natural, Ipanema é um ícone do Rio de Janeiro. </p>
+            </div>
+        </div>
+
+
+        <div class="attraction-card">
+            <img src="https://cupomtur.com.br/images/listings/2022-08/undefined-1660001189-998-e.jpg" alt="Maracanã"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>Maracanã</h3>
+                <p>O maior templo do futebol brasileiro, palco de momentos históricos</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0I7CR8yvGM6WgztrqG0BjFgMNmykNizLdBPk3pzyd_vOU-t1hprjZCWK2xAFAU756S8&usqp=CAU"
+                alt="Sambódromo" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Sambódromo</h3>
+                <p>Palco do maior espetáculo da terra: o Carnaval carioca</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://guiaculturalcentrodorio.com.br/wp-content/uploads/2015/12/1-75.jpg"
+                alt="Catedral Metropolitana" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Catedral Metropolitana</h3>
+                <p>Impressionante arquitetura cônica com vitrais coloridos</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://www.appai.org.br/wp-content/uploads/2022/03/appai-passeio-cultural-centro-turistico-do-rio-da-escada-selaron-a-colombo-calendario.jpg"
+                alt="Escadaria Selarón" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Escadaria Selarón</h3>
+                <p>Obra de arte ao ar livre com azulejos coloridos</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://invexo.com.br/blog/wp-content/uploads/2023/03/calcadao-o-que-fazer-em-copacabana-rio-de-janeiro.jpg"
+                alt="Praia de Copacabana" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Copacabana</h3>
+                <p>A praia mais famosa do mundo, com 4km de extensão</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://diariodoporto.com.br/wp-content/uploads/4418-rOfuzzWlTb.webp" alt="AquaRio"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>AquaRio</h3>
+                <p>Maior aquário marinho da América do Sul</p>
+            </div>
+        </div>
+    </div>
+    <div class="tour-description">
+        <h2>City Tour Búzios</h2>
+        <p>Conheça o charme e a beleza da Península de Búzios</p>
+    </div>
+    <div class="attractions-grid">
+        <div class="attraction-card">
+            <img src="https://admin.passeiorio.com.br/wp-content/uploads/2024/07/rua-das-pedras-na-praia-de-buzios.jpg"
+                alt="Rua das Pedras" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Rua das Pedras</h3>
+                <p>Principal ponto turístico com lojas, restaurantes e vida noturna</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://c8.alamy.com/comp/P3XD8K/esttua-de-brigitte-bardot-um-dos-pontos-de-visitao-na-orla-bardot-em-bzios-trecho-de-mar-que-leva-o-nome-da-atriz-quem-em-1964-passou-uma-temporada-no-local-P3XD8K.jpg"
+                alt="Orla Bardot" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Orla Bardot</h3>
+                <p>Calçadão à beira-mar com a famosa estátua de Brigitte Bardot</p>
+            </div>
+        </div>
+        <div class="attraction-card">
+            <img src="https://www.transportal.com.br/noticias/wp-content/uploads/2019/09/Praia-de-Gerib%C3%A1.jpg"
+                alt="Praia de Geribá" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia de Geribá</h3>
+                <p>Famosa praia para surf e esportes aquáticos, com infraestrutura completa</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://www.curiosidadesdeubatuba.com.br/ubatuba/wp-content/uploads/2016/11/Praia-da-Lagoinha.jpg"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>Ponta da Lagoinha</h3>
+                <p>Mirante natural com vista panorâmica para várias praias da península</p>
+            </div>
+        </div>
+
+
+        <div class="attraction-card">
+            <img src="https://www.viagenscinematograficas.com.br/wp-content/uploads/2015/08/Bu25CC2581zios-Rio_121.jpg"
+                alt="Praia de João Fernandes" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia de João Fernandes</h3>
+                <p>Águas cristalinas ideais para mergulho e snorkeling</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://cactusexperiencias.com.br/wp-content/uploads/travessia-praia-da-tartaruga-praia-do-canto-buzios-04.jpeg"
+                alt="Praia da Tartaruga" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia da Tartaruga</h3>
+                <p>Uma das praias mais bonitas com águas calmas e transparentes</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tour-description">
+        <h2>City Tour Arraial do Cabo</h2>
+        <p>Descubra o Caribe Brasileiro</p>
+    </div>
+
+    <div class="attractions-grid">
+        <div class="attraction-card">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/12/d4/cb/praia-do-forno-sempre.jpg?w=1200&h=-1&s=1"
+                alt="Praia do Forno" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia do Forno</h3>
+                <p>Águas azul-turquesa e areias douradas</p>
+            </div>
+        </div>
+        <div class="attraction-card">
+            <img src="https://live.staticflickr.com/4622/25688091907_d6dd66b013.jpg" alt="Praia do Farol"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia do Farol</h3>
+                <p>Praia paradisíaca na Ilha do Farol com águas cristalinas</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://ondeir360.com.br/wp-content/uploads/2023/03/praia-grande-arraial-do-cabo02.jpg"
+                alt="Praia Grande" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Praia Grande</h3>
+                <p>Extensa faixa de areia com ondas perfeitas para surf</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://www.tevejopelomundo.com.br/wp-content/uploads/2019/03/praia-do-pontal-pesca-e1552009955701.jpg"
+                alt="Pontal do Atalaia" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Pontal do Atalaia</h3>
+                <p>Vista panorâmica das praias mais famosas</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://estalagemdoporto.com.br/wp-content/uploads/2022/06/DSC_3670.jpg" alt="Gruta Azul"
+                class="attraction-image">
+            <div class="attraction-info">
+                <h3>Gruta Azul</h3>
+                <p>Ponto de mergulho com águas cristalinas</p>
+            </div>
+        </div>
+
+        <div class="attraction-card">
+            <img src="https://www.mundoviajante.com/wp-content/uploads/2022/07/pontal_do_atalaia_arraial_do_cabo-2-1.jpg"
+                alt="Prainhas do Pontal" class="attraction-image">
+            <div class="attraction-info">
+                <h3>Prainhas do Pontal</h3>
+                <p>Conjunto de praias paradisíacas de águas claras</p>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <p>© 2024 Sua Empresa aqui - Todos os direitos reservados</p>
+        <p>Telefone: (22) 998590073 | Email: valmartinsfilho@gmail.com.br</p>
+    </footer>
+    <script src="./script.js"></script>
+ 
+</body>
+
+</html>

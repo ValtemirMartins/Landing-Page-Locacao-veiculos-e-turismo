@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excursões e Viagens - Sua Empresa</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .main-header {
+      background-color: #003366;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 1rem 0;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .logo img {
+      height: 60px;
+      width: 100px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    .nav-links a:hover {
+      color: #ffd700;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .excursion-header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-gramado-capa2019-01.jpg');
+      background-size: cover;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-out;
+        }
+
+        .destination-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    .destination-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destination-info {
+      padding: 1.5rem;
+    }
+
+    .section-title {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f5f5f5;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo.webp" alt="Logo da Empresa">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="excursion-header">
+    <h1>Excursões e Viagens Especiais</h1>
+  </section>
+
+  <h2 class="section-title">Hotéis e SPAs</h2>
+  <div class="destination-grid">
+    <div class="destination-card">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/21/0d/c5/hotel-fazenda-suica-le.jpg" class="destination-image"
+        alt="Hotel Serra dos Órgãos">
+      <div class="destination-info">
+        <h3>Hotel Serra dos Órgãos</h3>
+        <p>Teresópolis, RJ</p>
+        <p>Resort com vista panorâmica da Serra dos Órgãos, piscina aquecida e spa completo.</p>
+      </div>
+    </div>
+    <div class="destination-card">
+      <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/05/728818558-copacabana-palace-rio.jpg" class="destination-image"
+        alt="Copacabana-Palace">
+      <div class="destination-info">
+        <h3>Copacabana Palace</h3>
+        <p>Rio de Janeiro, RJ</p>
+        <p>Resort com vista panorâmica da Serra dos Órgãos, piscina aquecida e spa completo.</p>
+      </div>
+    </div>
+  
+    <div class="destination-card">
+      <img src="https://litoral-verde.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/01/25140804/Camada-86.jpg"
+        class="destination-image" alt="Hotel Villa Stonks">
+      <div class="destination-info">
+        <h3>Le Canton</h3>
+        <p>Teresópolis, RJ</p>
+        <p>Resort alpino com parque aquático, spa e gastronomia francesa.</p>
+      </div>
+    </div>
+
+    <!-- Continue with 4 more hotels/spas -->
+  </div>
+
+  <h2 class="section-title">Parques de Diversões e Aquáticos</h2>
+  <div class="destination-grid">
+    <div class="destination-card">
+      <img src="https://www.ingressocomdesconto.com.br/Content/upload/providers/42/3.jpg"
+        class="destination-image" alt="Beach Park">
+      <div class="destination-info">
+        <h3>Beach Park</h3>
+        <p>Fortaleza, CE</p>
+        <p>Maior parque aquático da América Latina com toboáguas radicais.</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="https://turismo.ib.itaborai.rj.gov.br/wp-content/uploads/2023/01/sitiomonicaemarciaoficial-24-01-2023-0001.jpg"
+        class="destination-image" alt="Beach Park">
+      <div class="destination-info">
+        <h3>Citio Mônica e Marcia</h3>
+        <p>Itaboraí, RJ</p>
+        <p>Maior parque aquático da América Latina com toboáguas radicais.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="section-title">Destinos Especiais</h2>
+  <div class="destination-grid">
+    <div class="destination-card">
+      <img src="https://dicasdonossobrasil.com.br/wp-content/uploads/2021/03/canela-gramado.jpg" class="destination-image"
+        alt="Gramado">
+      <div class="destination-info">
+        <h3>Gramado</h3>
+        <p>Rio Grande do Sul</p>
+        <p>Pacotes completos incluindo hospedagem, passeios e ingressos para principais atrações.</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="https://pureviagem.com.br/wp-content/uploads/2020/02/1-penedo.jpg" class="destination-image"
+        alt="Penedo">
+      <div class="destination-info">
+        <h3>Penedo</h3>
+        <p>Rio de Janeiro, RJ</p>
+        <p>Pacotes completos incluindo hospedagem, passeios e ingressos para principais atrações.</p>
+      </div>
+    </div>
+
+    <div class="destination-card">
+      <img src="https://i0.statig.com.br/bancodeimagens/4x/m8/y7/4xm8y72wdpz8xtwafl95n8vu4.jpg" class="destination-image"
+        alt="Penedo">
+      <div class="destination-info">
+        <h3>Parati</h3>
+        <p>Rio de Janeiro, RJ</p>
+        <p>Pacotes completos incluindo hospedagem, passeios e ingressos para principais atrações.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Sua Empresa aqui - Todos os direitos reservados</p>
+    <p>Telefone: (22) 998590073 | Email: valmartinsfilho@gmail.com.br</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+
+</html>
