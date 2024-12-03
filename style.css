@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }
-
+/*       H0ME       */
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957");
@@ -131,6 +131,8 @@ footer {
   color: #ffd700;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+/*      ABOUT      */
 .hero-about {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.connectvan.com.br/wp-content/uploads/2020/07/Fotografia-de-capa-de-evento-do-Facebook-1920x1080-px-1-e1582599930944.jpeg");
@@ -243,7 +245,7 @@ h2 {
   font-size: 2rem;
 }
 
-/*Contact*/
+/*   Contact   */
 
 .contact-page {
   margin-top: 80px;
@@ -356,7 +358,7 @@ h2 {
   border-radius: 8px;
   overflow: hidden;
 }
-/*CITY TOUR*/ /**/
+/*       CITY TOUR        */ 
 .tour-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg");
@@ -414,7 +416,7 @@ h2 {
   padding: 2rem;
   background-color: #f5f5f5;
 }
-/*   EXCURSÕES   */
+/*      EXCURSÕES     */
 
 .excursion-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -469,7 +471,7 @@ h2 {
   margin: 0;
 }
 
-/*   PASSEIOS   */
+/*     PASSEIOS    */
 .tour-header {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
   url('https://www.boqnews.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-16-at-18.27.43.jpeg');
