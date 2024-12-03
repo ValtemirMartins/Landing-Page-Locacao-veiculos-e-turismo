@@ -5,14 +5,13 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }
 
-
-
 .hero {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1544620347-c4fd4a3d5957");
   background-size: cover;
   background-position: center;
   height: 60vh;
@@ -41,12 +40,12 @@ body {
   background: white;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .cta-button {
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: white;
   padding: 1rem 2rem;
   border-radius: 5px;
@@ -133,7 +132,8 @@ footer {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .hero-about {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.connectvan.com.br/wp-content/uploads/2020/07/Fotografia-de-capa-de-evento-do-Facebook-1920x1080-px-1-e1582599930944.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.connectvan.com.br/wp-content/uploads/2020/07/Fotografia-de-capa-de-evento-do-Facebook-1920x1080-px-1-e1582599930944.jpeg");
   height: 60vh;
   background-size: cover;
   background-position: center;
@@ -195,7 +195,6 @@ footer {
 .cert-grid img {
   max-width: 150px;
   height: auto;
-  
 }
 .features-section {
   text-align: center;
@@ -251,7 +250,8 @@ h2 {
 }
 
 .contact-hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://cdn.motor1.com/images/mgl/PNNL8/s1/brabus-transforma-sprinter-em-van-executiva-de-alto-luxo-de-r-810-mil.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://cdn.motor1.com/images/mgl/PNNL8/s1/brabus-transforma-sprinter-em-van-executiva-de-alto-luxo-de-r-810-mil.jpg");
   height: 40vh;
   background-size: cover;
   background-position: center;
@@ -277,7 +277,7 @@ h2 {
   padding: 2rem;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -298,7 +298,7 @@ h2 {
 }
 
 .contact-card a:hover {
-  color: #FF6B00;
+  color: #ff6b00;
 }
 
 .social-media {
@@ -336,9 +336,15 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.social-card.facebook i { color: #1877f2; }
-.social-card.instagram i { color: #e4405f; }
-.social-card.youtube i { color: #ff0000; }
+.social-card.facebook i {
+  color: #1877f2;
+}
+.social-card.instagram i {
+  color: #e4405f;
+}
+.social-card.youtube i {
+  color: #ff0000;
+}
 
 .location {
   padding: 4rem 2rem;
@@ -349,4 +355,232 @@ h2 {
   margin: 2rem auto 0;
   border-radius: 8px;
   overflow: hidden;
+}
+/*CITY TOUR*/ /**/
+.tour-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.attraction-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.attraction-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.attraction-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.attraction-info {
+  padding: 1.5rem;
+}
+
+.attraction-info h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.tour-description {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+/*   EXCURSÕES   */
+
+.excursion-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-gramado-capa2019-01.jpg");
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.destination-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.destination-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-info {
+  padding: 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+/*   PASSEIOS   */
+.tour-header {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url('https://www.boqnews.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-16-at-18.27.43.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tour-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.tour-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tour-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tour-info {
+  padding: 1.5rem;
+}
+
+.tour-info h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.price-tag {
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/*   TRANSFER   */
+
+.service-header-transfer {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://static.wixstatic.com/media/0afc82_82d013c604fd4d37bd7ae4383e973c27~mv2.jpg/v1/fill/w_480,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0afc82_82d013c604fd4d37bd7ae4383e973c27~mv2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.service-content-transfer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.service-grid-transfer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service-features {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.service-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-features li:before {
+  content: "✓";
+  color: #003366;
+  position: absolute;
+  left: 0;
 }
