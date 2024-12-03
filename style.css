@@ -586,3 +586,73 @@ h2 {
   position: absolute;
   left: 0;
 }
+
+/* Configurações gerais para responsividade */
+@media screen and (max-width: 768px) {
+  /* Remove o header fixo */
+  .main-header {
+    position: static;
+  }
+
+  /* Ajusta o espaçamento e organização do nav */
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Estiliza os links do menu para melhor visualização em telas menores */
+  .nav-links {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Ajustes para as seções principais */
+  .hero {
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  .service-grid,
+  .vehicle-grid,
+  .contact-grid,
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-card,
+  .vehicle-card,
+  .contact-card,
+  .destination-card,
+  .tour-card {
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  /* Ajustes de fontes */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* Ajuste das imagens */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
