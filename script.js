@@ -61,3 +61,18 @@ vehicleCards.forEach(card => {
     vehicleObserver.observe(card);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const textElements = document.querySelectorAll('.animated-text p');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    textElements.forEach(element => {
+        observer.observe(element);
+    });
+});
