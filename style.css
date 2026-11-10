@@ -700,12 +700,14 @@ footer {
 }
 
 .service-content-transfer {
+  font-size: 1.25rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
 
 .service-grid-transfer {
+  font-size: 1.50rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
